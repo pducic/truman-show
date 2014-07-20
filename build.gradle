@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        applicationId 'com.pducic.serverexample'
+        minSdkVersion 15
+        targetSdkVersion 17
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    compile 'fi.iki.elonen:nanohttpd:2.1.0'
+    compile 'fi.iki.elonen:nanohttpd-webserver:2.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}

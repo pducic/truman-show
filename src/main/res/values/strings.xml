@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CardboardExample</string>
+    <string name="hello">Choose your mode:</string>
+    <string name="start">Start!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cardboard">CardboardActivity</string>
+
+
+</resources>
